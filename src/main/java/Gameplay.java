@@ -1,12 +1,12 @@
 package main.java;
 
-public class Gameplay extends ContenidoAudiovisual{
+public class Gameplay extends ContenidoAudiovisual {
 
 	private String streamer;
-	
+
 	public Gameplay(String titulo, int duracionEnMinutos, String genero, String streamer) {
 		super(titulo, duracionEnMinutos, genero);
-		this.streamer=streamer;
+		this.streamer = streamer;
 	}
 
 	public String getStreamer() {
@@ -20,14 +20,13 @@ public class Gameplay extends ContenidoAudiovisual{
 	@Override
 	public void mostrarDetalles() {
 		System.out.println("Detalle del Gameplay:");
-        System.out.println("ID: " + getId());
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Duración en minutos: " + getDuracionEnMinutos());
-        System.out.println("Género: " + getGenero());
-        System.out.println("Streamer: " + getStreamer());
-        System.out.println();
-		
+		System.out.println("ID: " + getId());
+		System.out.println("Título: " + getTitulo());
+		System.out.println("Duración en minutos: " + getDuracionEnMinutos());
+		System.out.println("Género: " + getGenero());
+		System.out.println("Streamer: " + getStreamer());
+		System.out.println();
+
 	}
 
-	
 }

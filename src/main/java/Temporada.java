@@ -3,9 +3,9 @@ package main.java;
 public class Temporada {
 
 	private int numeroTemporada;
-	
+
 	public Temporada(int numeroTemporada) {
-	this.numeroTemporada=numeroTemporada;
+		this.numeroTemporada = numeroTemporada;
 	}
 
 	public int getNumeroTemporada() {
@@ -15,6 +15,5 @@ public class Temporada {
 	public void setNumeroTemporada(int numeroTemporada) {
 		this.numeroTemporada = numeroTemporada;
 	}
-	
-	
+
 }
