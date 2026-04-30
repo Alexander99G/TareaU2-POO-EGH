@@ -1,6 +1,6 @@
-package poo;
+package main;
 
-import uni1a.*;
+import main.java.*;
 
 public class PruebaAudioVisual {
 	public static void main(String[] args) {

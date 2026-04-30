@@ -1,4 +1,4 @@
-package uni1a;
+package main.java;
 
 public class VideoClipMusical extends ContenidoAudiovisual {
 

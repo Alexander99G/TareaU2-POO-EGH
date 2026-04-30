@@ -1,4 +1,4 @@
-package uni1a;
+package main.java;
 
 // Subclase Pelicula que extiende de ContenidoAudiovisual
 public class Pelicula extends ContenidoAudiovisual {

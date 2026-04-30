@@ -1,4 +1,4 @@
-package uni1a;
+package main.java;
 
 // Subclase SerieDeTV que extiende de ContenidoAudiovisual
 public class SerieDeTV extends ContenidoAudiovisual {
