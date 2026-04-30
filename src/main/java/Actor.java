@@ -1,16 +1,16 @@
-package uni1a;
+package main.java;
 
-public class Actor  {
-	
+public class Actor {
+
 	private String nombre;
 	private String apellido;
 	private String nacionalidad;
-	
+
 	public Actor(String nombre, String apellido, String nacionalidad) {
-		this.nombre=nombre;
-		this.apellido=apellido;
-		this.nacionalidad=nacionalidad;
-		
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.nacionalidad = nacionalidad;
+
 	}
 
 	public String getNombre() {
@@ -36,6 +36,5 @@ public class Actor  {
 	public void setNacionalidad(String nacionalidad) {
 		this.nacionalidad = nacionalidad;
 	}
-	
-	
+
 }
