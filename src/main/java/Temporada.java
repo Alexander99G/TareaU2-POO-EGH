@@ -3,6 +3,7 @@ package main.java;
 public class Temporada {
 
 	private int numeroTemporada;
+	private int id;
 
 	public Temporada(int numeroTemporada) {
 		this.numeroTemporada = numeroTemporada;
@@ -16,4 +17,14 @@ public class Temporada {
 		this.numeroTemporada = numeroTemporada;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
+	
 }

@@ -4,6 +4,7 @@ public class Investigador {
 
 	private String nombreInvestigador;
 	private String nacionalidadInvestigador;
+	private int id;
 
 	public Investigador(String nombreInvestigador, String nacionalidadInvestigador) {
 		this.nacionalidadInvestigador = nacionalidadInvestigador;
@@ -26,4 +27,14 @@ public class Investigador {
 		this.nacionalidadInvestigador = nacionalidadInvestigador;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
+	
 }

@@ -1,41 +1,58 @@
 package main.java;
 
-// Subclase SerieDeTV que extiende de ContenidoAudiovisual
 public class SerieDeTV extends ContenidoAudiovisual {
-	private int temporadas;
-	private Temporada temporada;
+    private int temporadas;
+    private Temporada temporada;
 
-	public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas, Temporada temporada) {
-		super(titulo, duracionEnMinutos, genero);
-		this.temporadas = temporadas;
-		this.temporada = temporada;
-	}
+    // Constructor 1: Para crear una NUEVA serie
+    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas, Temporada temporada) {
+        super(titulo, duracionEnMinutos, genero);
+        this.temporadas = temporadas;
+        this.temporada = temporada;
+    }
 
-	public int getTemporadas() {
-		return temporadas;
-	}
+    // Constructor 2: Para CARGAR una serie desde el CSV
+    public SerieDeTV(int id, String titulo, int duracionEnMinutos, String genero, int temporadas, Temporada temporada) {
+        super(id, titulo, duracionEnMinutos, genero);
+        this.temporadas = temporadas;
+        this.temporada = temporada;
+    }
 
-	public void setTemporadas(int temporadas) {
-		this.temporadas = temporadas;
-	}
+    public int getTemporadas() {
+        return temporadas;
+    }
 
-	public Temporada getTemporada() {
-		return temporada;
-	}
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
+    }
 
-	public void setTemporada(Temporada temporada) {
-		this.temporada = temporada;
-	}
+    public Temporada getTemporada() {
+        return temporada;
+    }
 
-	@Override
-	public void mostrarDetalles() {
-		System.out.println("Detalles de la Serie de TV:");
-		System.out.println("ID: " + getId());
-		System.out.println("Título: " + getTitulo());
-		System.out.println("Duración en minutos: " + getDuracionEnMinutos());
-		System.out.println("Género: " + getGenero());
-		System.out.println("Temporadas: " + this.temporadas);
-		System.out.println("Temporada en emision:" + temporada.getNumeroTemporada());
-		System.out.println();
-	}
+    public void setTemporada(Temporada temporada) {
+        this.temporada = temporada;
+    }
+
+    @Override
+    public String obtenerDetalles() {
+        String infoTemporada = (temporada != null) 
+            ? String.valueOf(temporada.getNumeroTemporada()) 
+            : "No asignada";
+
+        return "--- Detalles de la Serie de TV ---\n" +
+               "ID: " + getId() + "\n" +
+               "Título: " + getTitulo() + "\n" +
+               "Duración: " + getDuracionEnMinutos() + " min\n" +
+               "Género: " + getGenero() + "\n" +
+               "Total Temporadas: " + temporadas + "\n" +
+               "Temporada en emisión: " + infoTemporada + "\n";
+    }
+
+    @Override
+    public String toCSV() {
+        // Guardamos el ID de la temporada. Asumimos que Temporada tiene un método getId()
+        int idTemporada = (temporada != null) ? temporada.getId() : -1;
+        return super.toCSV() + "," + temporadas + "," + idTemporada;
+    }
 }

@@ -5,6 +5,7 @@ public class Actor {
 	private String nombre;
 	private String apellido;
 	private String nacionalidad;
+	private int id;
 
 	public Actor(String nombre, String apellido, String nacionalidad) {
 		this.nombre = nombre;
@@ -36,5 +37,15 @@ public class Actor {
 	public void setNacionalidad(String nacionalidad) {
 		this.nacionalidad = nacionalidad;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
 
 }
