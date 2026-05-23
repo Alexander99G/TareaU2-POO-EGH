@@ -15,7 +15,7 @@ public abstract class ContenidoAudiovisual {
         this.genero = genero;
     }
 
-    // Constructor 2: Para cargar contenido existente desde archivo cvs
+    // Constructor 2: Para cargar contenido existente desde archivo csv
     public ContenidoAudiovisual(int id, String titulo, int duracionEnMinutos, String genero) {
         this.id = id;
         this.titulo = titulo;
