@@ -7,7 +7,7 @@ public abstract class ContenidoAudiovisual {
     private int duracionEnMinutos;
     private String genero;
 
-    // Constructor 1: Para crear un NUEVO contenido (ej. desde la consola)
+    // Constructor 1: Para crear un nuevo contenido
     public ContenidoAudiovisual(String titulo, int duracionEnMinutos, String genero) {
         this.id = contador++;
         this.titulo = titulo;
@@ -15,7 +15,7 @@ public abstract class ContenidoAudiovisual {
         this.genero = genero;
     }
 
-    // Constructor 2: Para cargar contenido EXISTENTE (desde el archivo CSV)
+    // Constructor 2: Para cargar contenido existente desde archivo csv
     public ContenidoAudiovisual(int id, String titulo, int duracionEnMinutos, String genero) {
         this.id = id;
         this.titulo = titulo;
