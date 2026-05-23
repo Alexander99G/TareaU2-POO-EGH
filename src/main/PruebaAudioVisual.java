@@ -4,7 +4,7 @@ import main.java.*;
 
 public class PruebaAudioVisual {
     public static void main(String[] args) {
-        System.out.println("Iniciando prueba...");
+        System.out.println("Hola Bienvenido");
         
         Actor actorAvatar = new Actor("Sam", "Worthington", "Australiano");
         Temporada temporadaGot = new Temporada(2);
