@@ -55,7 +55,7 @@ public abstract class ContenidoAudiovisual {
         this.genero = genero;
     }
 
-    public abstract void mostrarDetalles();
+    public abstract String obtenerDetalles();
 
     // Método de ayuda para la Etapa 1: Formatea los datos para escribirlos en el archivo CSV
     public String toCSV() {
